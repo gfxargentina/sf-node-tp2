@@ -1,0 +1,18 @@
+{
+  "name": "skill-factory-nodejs-tp-2",
+  "version": "1.0.0",
+  "description": "Trabajo practico para el curso de Skill Factory Nodejs de Avalith",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "author": "Luis Chilo",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.2",
+    "express": "^4.18.1"
+  }
+}
