@@ -9,9 +9,11 @@ const app = express();
 dbConnection();
 
 app.use(cors());
+app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.use('/user', require('./routes/user.routes'));
+app.use('/car', require('./routes/car.routes'));
 
 app.listen(process.env.PORT, () => {
   console.log(`Server runing in port ${process.env.PORT}`);
