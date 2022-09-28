@@ -3,6 +3,7 @@ const router = Router();
 
 const validateJWT = require('../middleware/validate-jwt');
 const { isAdminRole, hasARole } = require('../middleware/validate-role');
+const errorHandler = require('../middleware/errorHandler');
 
 const {
   getAllUsers,
@@ -17,5 +18,6 @@ router.get('/:id', validateJWT, isAdminRole, getUserById);
 //router.post('/', validateJWT, hasARole('ADMIN', 'USER'), createUser);
 router.put('/:id', validateJWT, hasARole('ADMIN', 'USER'), updateUser);
 router.delete('/:id', validateJWT, isAdminRole, deleteUser);
+router.use(errorHandler.notFound);
 
 module.exports = router;
