@@ -28,5 +28,10 @@ Proyecto basico de una concesionaria de autos, con autenticacion/autorizacion y 
 
 ### Usuario Admin Demo
 
+- email: admin@gmail.com
+- password: 12345678
+
+### Prueba de Enpoints
+
 - importar el archivo: Concesionaria Skill Factory.postman_collection.json en postman
   para realizar las pruebas de los endpoints
