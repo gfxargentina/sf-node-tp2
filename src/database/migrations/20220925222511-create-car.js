@@ -40,6 +40,7 @@ module.exports = {
       },
       idUser: {
         type: Sequelize.INTEGER,
+        allowNull: true,
         References: {
           model: 'User',
           key: 'id',
