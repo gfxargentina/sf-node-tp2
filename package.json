@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "nodemon src/index.js",
     "db:create": "npx sequelize-cli db:create",
-    "db:migrate": "npx sequelize-cli db:migrate"
+    "db:migrate": "npx sequelize-cli db:migrate",
+    "db:seed": "npx sequelize-cli db:seed:all"
   },
   "author": "Luis Chilo",
   "license": "ISC",
