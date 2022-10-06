@@ -20,3 +20,5 @@ app.use('/car', require('./routes/car.routes'));
 app.listen(process.env.PORT, () => {
   console.log(`Server runing in port ${process.env.PORT}`);
 });
+
+module.exports = app;
